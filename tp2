@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+char *ChargerChaine(int N) {
+    char *chaine = (char *)malloc((N + 1) * sizeof(char)); 
+    if (chaine == NULL) {
+     printf("Erreur !\n");
+     exit(1);
+    }
+     printf("Veuillez saisir une chaîne de caractères max: %d :\n", N);
+     scanf("%s", chaine); 
+    return chaine;
+}
+int Longueur(char *ch) {
+  return strlen(ch); 
+}
+void ChTab(char *p, char Tab[]) {
+    strcpy(Tab, p); 
+}
+void InvTab(char Tab[], char T[], int m) {
+    for (int i = 0; i < m; i++) {
+        T[i] = Tab[m - i - 1]; 
+    }
+      T[m] = '\0'; 
+}
+void AfTab(char Tab[], int m) {
+     printf("Contenu du tableau: %s\n", Tab); 
+}
+int main() {
+   int n; 
+      printf("Veuillez saisir la taille maximale de la chaîne:\n");
+     scanf("%d", &n);
+     char *ch = ChargerChaine(n); 
+     char Tab[m + 1], T[m + 1]; 
+     ChTab(ch, Tab); 
+     AfTab(Tab, m); 
+     InvTab(Tab, T, m); 
+     AfTab(T, m);
+     free(ch); 
+    return 0;
+}
