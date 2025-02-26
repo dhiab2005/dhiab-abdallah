@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>OnlineStore🛒</h1>
+        </div>
+        <div class="search">
+            <div class="search_bar">
+             <form action="" method="get">
+             <input type="text" class="search_input" name="" placeholder="ادخل كلمة البحث"></input>
+             <button class="button_search" name="btn_search">البحث
+             </button>
+              </form>
+            </div/.search_bar>
+            </div/.search>
+    </header>
+      <nav>
+         <div class="social">
+            <ul>
+                <li> 
+                   <p style="text-align: left;">
+                    <a href="" target_blank><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" target_blank><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="" target_blank><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" target_blank><i class="fa-brands fa-whatsapp"></i></a>
+                   </p>
+                </li>
+            </ul>
+         </div>
+          <div class="section">
+            <ul>
+              <li><a href="idex.html" >الرئسية</a></li>  
+              <li><a href="" >االانارة</a></li>
+              <li><a href="" >الكهرباء</a></li>
+              <li><a href="" >الخيوط اللسلكية</a></li>
+            </ul>
+          </div>
+      </nav>
+          <div class="cart"> 
+            <ul>
+              <li><a href="signup.php"><i class="fa-solid fa-user"></i> </a>  </li>
+              <li class="cart-icon"><a href="cart.php"><i class="fas fa-shopping-cart"></i> </a> 
+               <span class="cart-count">0</span>
+              </li>
+            </ul>
+              
+          </div>
+    <main>    
+      <div class="products">
+          <div class="product" data-id="1" data-name="مصباح لاد" data-price="50">
+            <img src="img/مصباح.jpg" alt="erre">
+              <h2>مصباح لاد</h2>
+              <p>السعر: 50الف </p>
+              <div class="qty-count">
+                <button class="qty-count-mins">-</button>
+                <input type="number" id="quantity" name="" value="1" min="0" max="20">
+                <button class="qty-count-add">+</button>
+              </div>
+              <button class="add-to-cart">إضافة إلى السلة</button>
+              <div class="product-description"><a href=""><i class="fa-solid fa-eye"></i>للمزيد من معلومات</a></div>
+          </div>
+          <div class="product" data-id="2" data-name="خيوط شبكة" data-price="80">
+              <img src="img/خيط شبكة.jpg" alt="erre">
+              <h2>خيوط شبكة </h2>
+              <p>السعر: 80الف</p> 
+              <button class="add-to-cart">إضافة إلى السلة</button>
+              <div class="product-description"><a href=""><i class="fa-solid fa-eye"></i>للمزيد من معلومات</a></div>
+          </div>  
+          <div class="product" data-id="3" data-name="انارة مكتبية" data-price="100">
+              <img src="img/انارة.jpg" alt="erre">
+                <h2>انارة مكتبية</h2>
+                <p>السعر: 100الف </p>
+                <button class="add-to-cart">إضافة إلى السلة</butto>
+                <div class="product-description"><a href=""><i class="fa-solid fa-eye"></i>للمزيد من معلومات</a></div>  
+          </div>
+          <div class="product" data-id="4" data-name="  مقبس" data-price="12">
+                <img src="img/قبس.jpg" alt="erre">
+                <h2> مقبس </h2>
+                <p>السعر: 12الف </p>
+                <button class="add-to-cart">إضافة إلى السلة</button>
+                <div class="product-description"><a href=""><i class="fa-solid fa-eye"></i>للمزيد من معلومات</a></div>
+          </div>
+      </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    </main>
+</body>
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    height:99px;
+    width:100%;
+    background-color: #e8eeed;
+}
+.logo h1{
+    float:left;
+    padding:0px 10px;
+    color:black;
+    margin-left:3px;
+    font-size:35px;
+    font-weight:900;
+    text-shadow: 3px 3px 3px rgb(red, green, blue);
+ 
+ }
+ 
+ .search{
+   float:right; 
+   margin-right:10px; 
+   margin-top:20px;
+ }
+ .search_input{
+    padding:6px;
+    color:#310fae;
+    width:150px;
+    font-size:16px;
+    border:1px solid #111111;
+    margin-top:5px;
+ }
+ .button_search{
+    padding: 5px 10px;
+    background: size #0f74f0 s;;
+    border-radius: 5px;
+    cursor:pointer;
+ }
+
+nav {  
+    width:100%;
+    height: 60px;
+    background-color: #f8f8f8;
+    border-bottom:9px solid #dfdfdf;
+}
+.social ul {  
+    list-style:none ;
+    margin-left:10px ;
+
+}
+.social ul li{ 
+    float:left;
+    padding:5px 5px;
+    margin-top: 10px;
+}
+.secial ul li a{ 
+    color: rgb(87, 86, 86);
+}
+.secial ul li a:hover{ 
+    color:#79adec;
+}
+.section ul li{ 
+     float: right;
+     padding: 5px 3px;
+     margin-left:5px ;
+
+}
+.section ul li a{ 
+    text-decoration: none;
+    font-size: 20px;
+    color: #080808;
+    padding: 5px 3px;
+    border-radius:5px;
+}
+.section ul { 
+    list-style: none;
+}
+.section ul a:hover{ 
+    background-color:#ccc;
+    color:white;
+}
+.cart ul  {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+.cart ul li {
+    display: block;
+    margin-left: 9px;
+    padding: 2px;
+    font-size: 20px;
+   
+}
+.cart ul li  a {
+    color: #080808;
+}
+.cart ul li a:hover{
+    color: rgb(170, 210, 245);
+}
+.cart-icon{
+    position:relative ;
+    display: inline-block;
+}
+.cart-count{
+    position: absolute;
+    top: -8px;
+    background-color:#111111;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 50%;
+    font-size:12px ;
+}
+.products {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.products img{
+    width: 180px;
+    height: 150px;
+    border-radius: 30px;
+
+}
+.products img:hover{
+    opacity: 0.7;
+}
+.qty-count{
+    margin: 40px;
+}
+.qty-count-mins{
+    font-size: 5px;
+}
+.qty-count-add{
+    font-size: 5px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+.qty-count {
+
+}
